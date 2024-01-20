@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import TeaControler from "./TeaControler";
+import TeaControl from "./TeaControl";
 
 function App() {
   return (
