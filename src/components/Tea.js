@@ -11,8 +11,10 @@ function Tea(props) {
     <>
       <div style={teaStyles}
         onClick={() => props.whenTeaClicked(props.id)}>
-        <h3>{props.names}</h3>
-        <p>inventory: {props.inventory}</p>
+        <h3>{props.name}</h3>
+        <p>Flavor: {props.flavor}</p>
+        <p>Cost for One Tea Serving: {props.price}</p>
+        <p>Inventory: {props.inventory}</p>
         <hr />
       </div>
     </>
