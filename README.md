@@ -2,7 +2,7 @@
 
 #### By _**Jessica Hattig**_
 
-#### _Epicodus, Week 31-32 Independent Project: React Fundamentals
+#### _Epicodus, Week 31-32 Independent Project: React Fundamentals_
 
 ## Description
 Welcome to the Tea Shop Tracker, a delightful project that helps you manage your tea shop inventory with ease. This intuitive web application allows tea shop owners to add, edit, and track various tea blends, keeping tabs on their names, flavors, prices, and inventory. With a user-friendly interface, you can seamlessly navigate through your tea list, update inventory, and even edit tea details. The Tea Shop Tracker is the perfect application for tea enthusiasts and shop owners, ensuring a well-organized and enjoyable tea-selling experience.
@@ -17,18 +17,19 @@ Welcome to the Tea Shop Tracker, a delightful project that helps you manage your
 
 ## Component Tree
 ```
-App.js
+├── App.js
 ├── Header.js
 ├── TeaControl.js
 │   ├── NewTeaForm.js
+│   ├── ReusableForm.js (previously missed)
 │   ├── TeaList.js
 │   │   └── Tea.js
 │   └── TeaDetail.js
 │       └── EditTeaForm.js
 └── img
-    └── tea.png
+    └── tea.png 
 ```
-
+## Component Diagram
 
 
 ## Setup/Installation Requirements
