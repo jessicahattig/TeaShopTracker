@@ -3,16 +3,16 @@ import PropTypes from "prop-types";
 
 function Tea(props) {
   // inline styling example
-  const ticketStyles = {
+  const teaStyles = {
     fontFamily: 'sans-serif'
   }
 
   return (
     <>
-      <div style={ticketStyles}
+      <div style={teaStyles}
         onClick={() => props.whenTeaClicked(props.id)}>
         <h3>{props.names}</h3>
-        <p>urgency: {props.urgency}</p>
+        <p>inventory: {props.inventory}</p>
         <hr />
       </div>
     </>
@@ -25,7 +25,7 @@ Tea.propTypes = {
   issue: PropTypes.string.isRequired,
   urgency: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
-  whenTicketClicked: PropTypes.func
+  whenTeaClicked: PropTypes.func
 }
 
 export default Tea;

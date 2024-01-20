@@ -65,11 +65,11 @@ class TeaControl extends React.Component {
     })
   }
 
-  handleUpdateTeaUrgency = (teaToUpdate, delta) => {
-    const updatedUrgency = teaToUpdate.urgency + delta;
+  handleUpdateTeaInventory = (teaToUpdate, delta) => {
+    const updatedInventory = teaToUpdate.inventory + delta;
     
-    if (updatedUrgency >= 1 && updatedUrgency <= 10) {
-      const updatedTea = { ...teaToUpdate, urgency: updatedUrgency };
+    if (updatedInventory >= 1 && updatedInventory <= 100) {
+      const updatedTea = { ...teaToUpdate, inventory: updatedInventory };
       
       const newMainTeaList = this.state.mainTeaList
         .filter(tea => tea.id !== teaToUpdate.id)

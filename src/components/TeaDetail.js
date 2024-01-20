@@ -2,24 +2,24 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function TeaDetail(props) {
-  const { tea, onClickingDelete, onClickingEdit, onClickingUpdateUrgency } = props;
+  const { tea, onClickingDelete, onClickingEdit, onClickingUpdateInventory } = props;
 
-  function handleDecrementingUrgency(){
-    onClickingUpdateUrgency(tea, -1);
+  function handleDecrementingInventory(){
+    onClickingUpdateInventory(tea, -1);
   }
   
-  function handleIncrementingUrgency(){
-    onClickingUpdateUrgency(tea, 1);
+  function handleIncrementingInventory(){
+    onClickingUpdateInventory(tea, 1);
   }
 
   return (
     <>
-      <h3>{tea.location}</h3>
-      <h3>{tea.names}</h3>
-      <p><em>{tea.issue}</em></p>
-      <p>urgency: {tea.urgency}</p>
-      <button onClick={handleIncrementingUrgency}>Increase Urgency</button>
-      <button onClick={handleDecrementingUrgency}>Decrease Urgency</button>
+      <h3>{tea.name}</h3>
+      <h3>{tea.flavor}</h3>
+      <p><em>{tea.price}</em></p>
+      <p>Inventory: {tea.inventory}</p>
+      <button onClick={handleIncrementingInventory}>Increase Inventory</button>
+      <button onClick={handleDecrementingInventory}>Decrease Inventory</button>
       <br />
       <button onClick={() => onClickingEdit(tea.id)}>Edit Tea</button>
       <button onClick={() => onClickingDelete(tea.id)}>Close Tea</button>

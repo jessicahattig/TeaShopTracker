@@ -7,29 +7,29 @@ function ReuseableForm(props) {
       <form onSubmit={props.formSubmissionHandler}>
         <input
           type="text"
-          name="names"
-          placeholder="Pair Names"
+          name="name"
+          placeholder="Name of Tea"
           required />
         <br />
         <input
           type="text"
-          name="location"
-          placeholder="Location"
+          name="flavor"
+          placeholder="Flavor Description"
           required />
         <br />
         <textarea
-          name="issue"
-          placeholder="Describe your issue"
+          name="price"
+          placeholder="Price"
           required />
         <br />
-        <label htmlFor="urgency">Urgency: </label>
+        <label htmlFor="Inventory">Inventory: </label>
         <input
           type="number"
-          name="urgency"
+          name="inventory"
           min="1"
-          max="10"
+          max="100"
           defaultValue="1"
-          placeholder="urgency"
+          placeholder="Inventory"
           required />
         <br />
         <button type="submit">{props.buttonText}</button>

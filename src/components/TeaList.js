@@ -12,10 +12,10 @@ function TeaList(props) {
       {props.teaList.map((tea) =>
         <Tea
           whenTeaClicked={props.onTeaSelection}
-          names={tea.names}
-          location={tea.location}
-          issue={tea.issue}
-          urgency={tea.urgency}
+          name={tea.name}
+          flavor={tea.flavor}
+          price={tea.price}
+          inventory={tea.inventory}
           id={tea.id}
           key={tea.id} />
       )}

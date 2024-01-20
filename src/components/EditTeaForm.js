@@ -8,10 +8,10 @@ function EditTeaForm(props) {
   function handleEditFormSubmission(event) {
     event.preventDefault();
     props.onEditTea({
-      names: event.target.names.value,
-      location: event.target.location.value,
-      issue: event.target.issue.value,
-      urgency: parseInt(event.target.urgency.value),
+      name: event.target.name.value,
+      flavor: event.target.flavor.value,
+      price: event.target.price.value,
+      inventory: parseInt(event.target.inventory.value),
       id: tea.id
     })
   }
