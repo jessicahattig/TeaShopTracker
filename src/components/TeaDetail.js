@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function TeaDetail(props) {
-  const { tea, onClickingDelete, onClickingEdit, onClickingUpdateInventory } = props;
+  const { tea, onClickingDelete, onClickingEdit, onClickingUpdateTeaInventory } = props;
 
   function handleDecrementingInventory(){
-    onClickingUpdateInventory(tea, -1);
+    onClickingUpdateTeaInventory(tea, -1);
   }
   
   function handleIncrementingInventory(){
-    onClickingUpdateInventory(tea, 1);
+    onClickingUpdateTeaInventory(tea, 1);
   }
 
   return (
@@ -32,7 +32,7 @@ TeaDetail.propTypes = {
   tea: PropTypes.object,
   onClickingDelete: PropTypes.func,
   onClickingEdit: PropTypes.func,
-  onClickingIncrement: PropTypes.func
+  onClickingUpdateTeaInventory: PropTypes.func
 }
 
 export default TeaDetail;
