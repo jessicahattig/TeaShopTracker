@@ -3,8 +3,8 @@ import Tea from "./Tea.js";
 import PropTypes from "prop-types";
 
 function TeaList(props) {
-  if (!props.teaList) {
-    return<p>Loading...</p>
+  if (!props.teaList || props.teaList.length === 0) {
+    return<p>There is no tea in inventory.</p>
   }
   return (
     <>

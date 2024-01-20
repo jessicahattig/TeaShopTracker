@@ -22,7 +22,7 @@ function TeaDetail(props) {
       <button onClick={handleDecrementingInventory}>Decrease Inventory</button>
       <br />
       <button onClick={() => onClickingEdit(tea.id)}>Edit Tea</button>
-      <button onClick={() => onClickingDelete(tea.id)}>Close Tea</button>
+      <button onClick={() => onClickingDelete(tea.id)}>Delete Tea</button>
       <br />
     </>
   )
