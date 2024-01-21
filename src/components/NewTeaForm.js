@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { v4 } from "uuid";
-import ReuseableForm from "./ReuseableForm";
+import ReusableForm from "./ReusableForm";
 
 function NewTeaForm(props) {
   function handleNewTicketFormSubmission(event) {
@@ -27,7 +27,7 @@ function NewTeaForm(props) {
 
   return (
     <>
-      <ReuseableForm
+      <ReusableForm
         formSubmissionHandler={handleNewTicketFormSubmission}
         buttonText="Submit New Tea" />
     </>

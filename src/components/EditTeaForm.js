@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReuseableForm from "./ReuseableForm";
+import ReusableForm from "./ReusableForm";
 
 function EditTeaForm(props) {
   const { tea } = props;
@@ -17,7 +17,7 @@ function EditTeaForm(props) {
   }
   return (
     <>
-      <ReuseableForm 
+      <ReusableForm
         formSubmissionHandler={handleEditFormSubmission}
         buttonText="Update Tea" />
     </>
