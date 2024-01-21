@@ -21,7 +21,7 @@ Welcome to the Tea Shop Tracker, a delightful project that helps you manage your
 ├── Header.js
 ├── TeaControl.js
 │   ├── NewTeaForm.js
-│   ├── ReusableForm.js (previously missed)
+│   ├── ReusableForm.js
 │   ├── TeaList.js
 │   │   └── Tea.js
 │   └── TeaDetail.js
@@ -30,7 +30,7 @@ Welcome to the Tea Shop Tracker, a delightful project that helps you manage your
     └── tea.png 
 ```
 ## Component Diagram
-
+![diagram](TeaShopComponent.png)
 
 ## Setup/Installation Requirements
 1. Clone project `$ git clone https://github.com/jessicahattig/TeaShopTracker.git`
